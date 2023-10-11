@@ -1,0 +1,41 @@
+
+body {
+    background-image: url("forest.jpg");
+    margin: 0;
+}
+
+.block {
+    height: 100px;
+    width: 90%;
+    margin: 5%;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 20pt;
+    color: white;
+    background-color: #0C3823;
+    padding-top: 20px;
+}
+
+.welcome{
+    width: 100vw;
+    height: 100vh;
+    background-color:#0C3823;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 35pt;
+    color: white;
+    text-align: center;
+    padding-top: 50vh;
+}
+
+#scrollButton {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1e4934;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New':'Courier New', Courier, monospace;
+}
