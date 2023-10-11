@@ -1,6 +1,7 @@
 
 body {
     background-image: url("forest.jpg");
+    background-size: cover;
     margin: 0;
 }
 
@@ -37,5 +38,4 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
-    font-family: 'Courier New':'Courier New', Courier, monospace;
 }

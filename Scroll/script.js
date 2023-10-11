@@ -24,12 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollButton.style.display = "none";
   });
   window.addEventListener("scroll", function () {
-      if ( window.scrollY<500) {
+      if (window.scrollY<500) {
           scrollButton.style.display = "block";
       } else {
           scrollButton.style.display = "none";
       }
   });
 });
-
-//window.scrollY > 50 &&
