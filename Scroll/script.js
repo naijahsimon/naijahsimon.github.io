@@ -1,4 +1,5 @@
 
+AOS.init()
 
 $(document).ready(function(){
     $("blocks").click(function(){
@@ -10,12 +11,6 @@ $(document).ready(function(){
       $("#div6").fadeTo(1000, 0.7);
     });
   });
-
-  AOS.init()
-
-
-//let beginStory = document.getElementById("begin-reading")
-//beginStory.addEventListener('click', () => {}
 
 document.addEventListener("DOMContentLoaded", function () {
   const scrollButton = document.getElementById("scrollButton");
@@ -29,10 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollButton.style.display = "none";
   });
   window.addEventListener("scroll", function () {
-      if (window.scrollY > 100) {
+      if ( window.scrollY<500) {
           scrollButton.style.display = "block";
       } else {
           scrollButton.style.display = "none";
       }
   });
 });
+
+//window.scrollY > 50 &&
