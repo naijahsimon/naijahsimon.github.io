@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD SECTION-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naijah Simon - Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b377bb120a.js" crossorigin="anonymous"></script>
+    </head>
+    <!--BODY SECTION-->
+    <body>
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo_white.png" class="logo"> -->
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#mywork">my work</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>Test text.</span></p>
+                <h1>Naijah Simon</h1>
+            </div>
+        </div>
+        <!--BACKGROUND IMAGE OF NAIJAH-->
+        <div id="header"></div>
+    
+        <!--About Section-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <!--Column 1 (left)-->
+                    <div class="about-col-1">
+                        <img src="images/naijah_2.JPG">
+                    </div>
+                    <!--Column 2 (right)-->
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <!--Column 2 About text-->
+                        <p>I specialize in storytelling through audio/visual content production, branding and marketing strategy, and research and critical analysis.<br><br>Throughout my undergraduate career, I've exercised my skills in research, data collection, and report writing in service of roles that highlight community outreach, youth development, and customer/patron support and engagement.</p>
+                        <!--TAB TITLES IN COLUMN 2 ((skills, education, experience))-->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!--CONTENTS FOR SKILLS-->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Content Production</span><br>Audio/visual recording and editing</li>
+                                <li><span>Branding</span><br>Social media management, copywriting</li>
+                                <li><span>App Dev</span><br>Trying new things</li>
+                            </ul>
+                        </div>
+                        <!--CONTENTS FOR EXPERIENCE-->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Coursework</span><br>Communications Lab<br>Cinematography</li>
+                                <li><span>May 2023-Aug 2023</span><br>Volunteer Branding Residents at Mothers of Incarcerated Sons, Inc.</li>
+                                <li><span>XXXX-XXXX</span><br>Creative Director at AZIZA</li>
+                            </ul>
+                        </div>
+                        <!--CONTENTS FOR EDUCATION-->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-2023</span><br> New York University Abu Dhabi <br>B.A. Social Research & Public Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PROJECTS ((projects//portfolio))-->
+        <div id="mywork">
+            <div class="container">
+                <h1 class="sub-title"> My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/30mff_intro.png">
+                        <div class="layer">
+                            <h3>30-Minute Film Festival</h3>
+                            <p>30MFF project description text.</p>
+                            <a href="https://naijahsimon.github.io/30MFF/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/comic_intro.png">
+                        <div class="layer">
+                            <h3>Alternate Histories: The Trojan Horse</h3>
+                            <p>Comic project description text. Make sure to include group member names.</p>
+                            <a href="https://madinayeleukina.github.io/comics/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/sound_intro.jpg">
+                        <div class="layer">
+                            <h3>Farewell NYUAD</h3>
+                            <p>Sound project description text</p>
+                            <a href="https://kash-jay.github.io/fairwell-nyuad/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/video_intro.png">
+                        <div class="layer">
+                            <h3>The Newsroom</h3>
+                            <p>Video project description text</p>
+                            <a href="https://fangfausto.github.io/video-project-commlab/single.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!--CONTACT FORM-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> nms577@nyu.edu</p>
+                        <!-- CAN ADD WORK PHONE NUMBER LATER<p>xxx-xxx-xxxx</p>-->
+                        <div class="social-icons">
+                            <p><a href="https://www.linkedin.com/in/naijahsimon/"><i class="fab fa-linkedin"></i></a>Connect with Me</p>
+                        </div>
+                        <a href="images/download_CV.pdf" download target="_blank" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right"> 
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll('nav ul li a');
+
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 0,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+    </body>
+</html>
