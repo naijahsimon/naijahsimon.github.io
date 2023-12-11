@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background:#000000;
+   /* background:#F0E5D3;*/
+    background: #ECEBE7;
     color: #fff;
     /*margin: 0;
     padding: 0;*/
@@ -13,12 +14,13 @@ body{
 #header{
     width: 100%;
     height:100vh;
-    background-image: url(images/background_image.png);
+   /* background-image: url(images/background_image.png);*/
     background-size:cover;
     background-position: center;
 }
 .container{
     padding: 10px 10%;
+    /*background-color: #FFF;*/
 }
 
 nav{
@@ -27,12 +29,16 @@ nav{
     justify-content: space-between;
    /*justify-content: center;*/
     flex-wrap: wrap;
-    position: fixed;
-    background-color: #000000;
-    width: 100%;
+    /*position: fixed;
+    /*background-color: #000000;*/
+    background-color: #ECEBE7;
+   /* width: 100%;
     height: 60px;
     z-index: 2;
-    top: 0;
+    top: 0;*/
+}
+.logo{
+    width: 140px;
 }
 
 nav ul li{
@@ -41,9 +47,12 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #fff;
+   /* color: #fff;*/
+    /*color: #D65D56;*/
+    color: #433723;
     text-decoration: none;
     font-size: 25px;
+    font-family: "Hedvig Letters Serif", serif;
     position: relative;
 }
 /*NAV BAR UNDERLINE*/
@@ -51,7 +60,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #033500;
+    background: #E8746F;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -69,7 +78,8 @@ nav ul li a:hover::after{
     /*text-align: center;*/
 }
 .header-text p span{
-    color:#033500;
+   /* color:#033500;*/
+    color: #E8746F;
     font-style: italic;
 }
 .header-text h1{
@@ -81,7 +91,8 @@ nav ul li a:hover::after{
 /* About Section*/
 #about{
     padding: 80px 0;
-    color: #ababab;
+    /*color: #ababab;*/
+    color: #433723
     font-weight: 600;
 }
 .row{
@@ -94,7 +105,8 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 0px;
+    border-color: coral;
 }
 
 .about-col-2{
@@ -102,12 +114,33 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     font-weight: 400;
+    color: #433723;
 }
+.about-col-2 .point{
+    font-weight: 400;
+    color: #433723;
+    font-style: italic;
+}
+.about-col-2 .help{
+    font-weight: 400;
+    color: #433723;
+    font-style: italic;
+}
+
 
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: white;
+    color: #433723;
+    font-family: "Hedvig Letters Serif", serif;
+}
+
+.sub-title.mywork{
+    font-size: 60px;
+    font-weight: 600;
+    color: #433723;
+    font-family: "Hedvig Letters Serif", serif;
+    text-align: center;
 }
 
 .tab-titles{
@@ -126,7 +159,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #033500;
+    background: #E8746F;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -140,13 +173,15 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    color: #433723;
 }
 
 .tab-contents ul li span{
-    color: #033500;
+    color: #D2514A;
     font-size: 16px;
     font-weight: 600;
 }
+
 
 .tab-contents{
     display: none;
@@ -154,6 +189,18 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
+}
+
+.tab-contents .org{
+    color: #433723;
+    font-size: 16px;
+    font-weight: 500;
+    font-style:italic
+}
+.tab-contents .degree{
+    color: #433723;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* PORTFOLIO SECTION*/
 
@@ -178,11 +225,11 @@ nav ul li a:hover::after{
     display: block;
     transition: transform 1s;
 }
-/*CREATING GREEN OVERLAYER*/
+/*CREATING CORAL OVERLAYER*/
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #033500);
+    background: linear-gradient(rgba(0,0,0,0.6), #D2514A);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -208,7 +255,7 @@ nav ul li a:hover::after{
 /*LINK ICON BUTTON FOR THE WORK PREVIEWS*/
 .layer a{
     margin-top: 20px;
-    color:lightseagreen;
+    color:#D2514A;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -232,7 +279,8 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #033500;
+   /*border: 1px solid #E8746F;*/
+    background: #D2514A;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -240,7 +288,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background:#033500;
+    background: #E8746F;
 }
 
 /*CONTACT FORM*/
@@ -252,10 +300,11 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top:30px;
+    color: #433723;
 }
 
 .contact-left p i{
-    color:#033500;
+    color:#D2514A;
     margin-right: 10px;
     font-size: 25px;
 }
@@ -267,13 +316,12 @@ nav ul li a:hover::after{
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
-    margin-right: 15px;
-    color: navy;
+    margin-right: 5px;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #fff;
+   /* color: #fff;*/
     /*transform: translateY(-5px);*/
     transform: scale(1.1);
 }
@@ -281,7 +329,7 @@ nav ul li a:hover::after{
 /*DOWNLOAD CV BUTTON (and submit button)*/
 .btn.btn2{
     display: inline-block;
-    background:#033500;
+    background:#D2514A;
     transition: transform 0.5s;
 }
 .btn.btn2:hover{
@@ -290,17 +338,19 @@ nav ul li a:hover::after{
 /*STYLING CONTACT FORM */
 .contact-right form{
     width: 100%;
+    color: #433723;
 }
 form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background:#18191A;
+    background:#D3D0C9;
     padding: 15px ;
     margin: 15px 0;
-    color: #fff;
+    color: #433723;
     font-size: 18px;
-    border-radius: 6px;
+    font-family: "Hedvig Letters Serif", serif;
+    border-radius: 2px;
 }
 
 form .btn2{

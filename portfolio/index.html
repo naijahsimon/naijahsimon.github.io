@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <!--HEAD SECTION-->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Naijah Simon - Portfolio</title>
+        <title>Naijah Simon</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+<!--POPPINS FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!--HEDVIG FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+<!--FONTAWESOME KIT-->
 <script src="https://kit.fontawesome.com/b377bb120a.js" crossorigin="anonymous"></script>
     </head>
+
     <!--BODY SECTION-->
     <body>
         <div class="container">
             <nav>
-                <!-- <img src="images/logo_white.png" class="logo"> -->
+                <img src="images/naijah_logo_2png.png" class="logo">
                 <ul>
-                    <li><a href="#home">home</a></li>
+                    <li><a href="#index.html">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#mywork">my work</a></li>
                     <li><a href="#contact">contact</a></li>
@@ -42,9 +50,9 @@
                     </div>
                     <!--Column 2 (right)-->
                     <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
+                        <h1 class="sub-title">about me:</h1>
                         <!--Column 2 About text-->
-                        <p>I specialize in storytelling through audio/visual content production, branding and marketing strategy, and research and critical analysis.<br><br>Throughout my undergraduate career, I've exercised my skills in research, data collection, and report writing in service of roles that highlight community outreach, youth development, and customer/patron support and engagement.</p>
+                        <p><br>Hi there, I'm Naijah<br><br>I’m a recent Social Research & Public Policy grad with a penchant for branding and marketing strategy. With rigorous research & critical analysis training from New York University Abu Dhabi, and experience in content production in a variety of roles, I understand how to draft, develop, and distribute a story in multiple mediums.<br><br>I understand that whether it’s an urgent policy recommendation or an ad on Instagram Reels, the way we communicate matters. That’s why I’m here— to help you<!--<span class="help">to help you </span>--><span class="point"> get your point across </span>(whatever it is)<!--<span class="help">whatever it is. </span></p>-->
                         <!--TAB TITLES IN COLUMN 2 ((skills, education, experience))-->
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -54,23 +62,25 @@
                         <!--CONTENTS FOR SKILLS-->
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Content Production</span><br>Audio/visual recording and editing</li>
+                                <li><span>Softwares</span><br>Adobe Photoshop, Adobe Illustrator, Adobe Premeire Pro, Davinci Resolve, Audacity</li>
+                                <li><span>Programming Languages</span><br>HTML/CSS/Javascript, Python, R, Stata</li>
                                 <li><span>Branding</span><br>Social media management, copywriting</li>
-                                <li><span>App Dev</span><br>Trying new things</li>
                             </ul>
                         </div>
                         <!--CONTENTS FOR EXPERIENCE-->
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Coursework</span><br>Communications Lab<br>Cinematography</li>
-                                <li><span>May 2023-Aug 2023</span><br>Volunteer Branding Residents at Mothers of Incarcerated Sons, Inc.</li>
-                                <li><span>XXXX-XXXX</span><br>Creative Director at AZIZA</li>
+                                <li><span>Dec '20 - May '22</span><br><span class="org">AZIZA</span> | Creative Director</li>
+                                <li><span>Oct '21 – Dec '21</span><br><span class="org">Whitney Museum of American Art</span> | Family Programs Intern</li>
+                                <li><span>June '21 – July '21</span><br><span class="org">The Andy Warhol Museum</span> | Learning & Public Engagement Intern</li>
+                                <li><span>July '20 – Aug '20</span><br><span class="org">The Urban Affairs Coalition</span> | Assistant Online Learning Coordinator</li>
                             </ul>
                         </div>
                         <!--CONTENTS FOR EDUCATION-->
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2019-2023</span><br> New York University Abu Dhabi <br>B.A. Social Research & Public Policy</li>
+                                <li><span>Aug 2020 - Dec 2023</span><br><span class="degree">B.A. Social Research & Public Policy</span> | New York University Abu Dhabi</li>
+                                <li><span>Relevant Coursework</span><br>Communications Lab, Cinematography, Strategic Management, Interview Methods</li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +91,7 @@
         <!--PROJECTS ((projects//portfolio))-->
         <div id="mywork">
             <div class="container">
-                <h1 class="sub-title"> My Work</h1>
+                <h1 class="sub-title"> my work</h1>
                 <div class="work-list">
                     <div class="work">
                         <img src="images/30mff_intro.png">
@@ -116,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn">See More</a>
+                <a href="work.html" class="btn">See More</a>
             </div>
         </div>
         <!--CONTACT FORM-->
@@ -138,9 +148,13 @@
                             <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
+        
                         </form>
                     </div>
                 </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Naijah Simon</p>
             </div>
         </div>
 
