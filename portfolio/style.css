@@ -344,6 +344,11 @@ nav ul li a:hover::after{
     width: 100%;
     color: #433723;
 }
+.contact-right .btn.btn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -362,9 +367,10 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    align-items: center;
 }
 
-/*CSS FOR SMALL SCREENS*/
+
 nav .fas{
     display:none;
 }
@@ -372,7 +378,12 @@ nav .fas{
     color:#433723;
     font-family: "Hedvig Letters Serif", serif;
     text-align: center;
+    position: relative;
+    bottom: 20px;
 }
+
+/*CSS FOR SMALL SCREENS*/
+
 @media only screen and (max-width: 600px){
     /*#header {
         background-image: url(images/background_header.png);
@@ -387,6 +398,8 @@ nav .fas{
         display: block;
         font-size: 25px;
         color:#433723;
+        transform: translateY(-20px);
+        z-index: 1;
     }
     nav ul{
         background: #332421;
@@ -448,10 +461,19 @@ nav .fas{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-
+    /*---------center submit button--------*/
+    .contact-right .btn.btn2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/*---------style copyright text--------*/
     .copyright p{
         color:#433723;
+        position: relative;
+        bottom: 20px;
     }
+
 
 
 
