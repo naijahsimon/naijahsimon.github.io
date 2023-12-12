@@ -30,16 +30,18 @@
         </div>
         <!--BACKGROUND IMAGE OF NAIJAH-->
         <div id="header">
-            <img src="images/header_image_2.png">
+            <img id="headerImage" src="images/header_image_2 copy.png" alt="Header Image">
         </div>
         <nav>
             <!--<img src="images/naijah_logo_2png.png" class="logo">-->
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#index.html">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#mywork">my work</a></li>
                 <li><a href="#contact">contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
     
         <!--About Section-->
@@ -136,7 +138,7 @@
             <div class="container contact">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
+                        <h1 class="sub-title">contact me</h1>
                         <p><i class="fas fa-paper-plane"></i> nms577@nyu.edu</p>
                         <!-- CAN ADD WORK PHONE NUMBER LATER<p>xxx-xxx-xxxx</p>-->
                         <div class="social-icons">
@@ -192,6 +194,28 @@
                 }
                 event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab");
+            }
+           
+            function checkWindowSize() {
+        var headerImage = document.getElementById('headerImage');
+        if (window.innerWidth <= 600) {
+            headerImage.src = "images/background_test_2.png";
+        } else {
+            headerImage.src = "images/header_image_2.png";
+        }
+    }
+
+    checkWindowSize();
+
+    window.addEventListener('resize', checkWindowSize);
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
             }
         </script>
 
