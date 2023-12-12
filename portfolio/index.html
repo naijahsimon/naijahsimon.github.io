@@ -149,7 +149,7 @@
                         <a href="images/download_CV.pdf" download target="_blank" class="btn">Download CV</a>
                     </div>
                     <div class="contact-right"> 
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
@@ -184,6 +184,9 @@
             });
         });
     });
+    </script>
+
+    <script>
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -197,7 +200,9 @@
                 event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab");
             }
-           
+           </script>
+
+           <script>
             function checkWindowSize() {
         var headerImage = document.getElementById('headerImage');
         if (window.innerWidth <= 600) {
@@ -211,6 +216,7 @@
 
     window.addEventListener('resize', checkWindowSize);
         </script>
+        
         <script>
             var sidemenu = document.getElementById("sidemenu");
             function openmenu(){
@@ -220,6 +226,18 @@
                 sidemenu.style.right = "-200px";
             }
         </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwutFczufFDP9qv9B1TPo_49vub6AK3aVna4FMJzOR-4Z2ZpKoM5mpVxrklh36z150/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 
     </body>
 </html>
