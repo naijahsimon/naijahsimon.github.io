@@ -245,10 +245,12 @@ nav ul li a:hover::after{
 }
 /*TEXT FOR THE WORK PREVIEWS*/
 .layer h3{
+    font-family: "Hedvig Letters Serif", serif;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .layer p{
+
     font-weight: 300;
     font-size: 14px;
 }
