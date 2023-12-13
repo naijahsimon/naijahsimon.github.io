@@ -250,7 +250,6 @@ nav ul li a:hover::after{
     margin-bottom: 10px;
 }
 .layer p{
-
     font-weight: 300;
     font-size: 14px;
 }
@@ -437,6 +436,7 @@ nav .fas{
     .about-col-1 img{
         border-radius: 10px;
     }
+
     /*---------make "about me" smaller"--------*/
      .sub-title{
         font-size: 50px;
@@ -458,6 +458,7 @@ nav .fas{
         font-size: 16px;
         font-weight: 400;
         color: #433723;
+        max-width: 100%;
     }
     /*---------reconfigure contact columns--------*/
     .contact-left, .contact-right{
